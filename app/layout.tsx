@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-body', weight: ['300
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono', weight: ['400', '500'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://deepthimahendran.vercel.app'),
+  metadataBase: new URL('https://deepthi-paul.vercel.app'),
   title: 'Deepthi Mahendran · Full-Stack Developer',
   icons: {
     icon: '/favicon.svg?v=3',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://deepthimahendran.vercel.app',
+    url: 'https://deepthi-paul.vercel.app',
     title: 'Deepthi Mahendran · Full-Stack Developer',
     description: 'Portfolio of Deepthi Mahendran, Full-Stack Developer & Tech Enthusiast building accessible and modern web applications.',
     siteName: 'Deepthi Mahendran Portfolio',
@@ -50,7 +50,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Deepthi Mahendran',
-  url: 'https://deepthimahendran.vercel.app',
+  url: 'https://deepthi-paul.vercel.app',
   jobTitle: 'Full-Stack Developer',
   description: 'Aspiring Full-Stack Developer & Tech Enthusiast building modern web applications.',
   sameAs: [

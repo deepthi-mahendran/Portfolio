@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://deepthi-mahendran.vercel.app
+Host: https://deepthi-paul.vercel.app
 
 # Sitemaps
-Sitemap: https://deepthi-mahendran.vercel.app/sitemap.xml
+Sitemap: https://deepthi-paul.vercel.app/sitemap.xml

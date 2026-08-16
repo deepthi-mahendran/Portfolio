@@ -73,7 +73,7 @@ const DATA = {
     },
     {
       id: 'day-01',
-      title: 'Day 01: Java Basics — Quiz Game',
+      title: 'Java Basics — Quiz Game',
       description: 'Multiple-choice questions, input validation, instant feedback, score tracking, answer summary.',
       category: 'learning',
       tags: ['Java', 'CLI', 'Input Validation'],
@@ -84,7 +84,7 @@ const DATA = {
     },
     {
       id: 'day-02',
-      title: 'Day 02: Java — Library Management System',
+      title: 'Java — Library Management System',
       description: 'Add/borrow/return books, inventory tracking, input validation, exception handling, persistent session.',
       category: 'learning',
       tags: ['Java', 'HashMap', 'Data Structures', 'Exception Handling'],
@@ -95,7 +95,7 @@ const DATA = {
     },
     {
       id: 'day-03',
-      title: 'Day 03: Java OOP — Student Management System',
+      title: 'Java OOP — Student Management System',
       description: 'Add/update/view students, duplicate ID check, static data management, menu-driven interface.',
       category: 'learning',
       tags: ['Java', 'OOP', 'Encapsulation', 'Static Data'],
@@ -106,7 +106,7 @@ const DATA = {
     },
     {
       id: 'day-04',
-      title: 'Day 04: Java — Stock Analysis (Arrays & ArrayLists)',
+      title: 'Java — Stock Analysis (Arrays & ArrayLists)',
       description: 'Average price, maximum price, occurrence count, cumulative sum, both array and ArrayList implementations.',
       category: 'learning',
       tags: ['Java', 'ArrayList', 'Arrays', 'Data Structures'],
@@ -117,7 +117,7 @@ const DATA = {
     },
     {
       id: 'day-05',
-      title: 'Day 05: Java — University Enrollment & Grade System',
+      title: 'Java — University Enrollment & Grade System',
       description: 'Add courses/students, enroll with capacity check, assign grades (0–100), overall average calculation.',
       category: 'learning',
       tags: ['Java', 'OOP', 'Data Validation', 'Collections'],
@@ -128,7 +128,7 @@ const DATA = {
     },
     {
       id: 'day-06',
-      title: 'Day 06: Java — Car Rental Agency System',
+      title: 'Java — Car Rental Agency System',
       description: 'Add cars/motorcycles/trucks, type-specific attributes (doors, wheels, cargo), robust input validation.',
       category: 'learning',
       tags: ['Java', 'Interfaces', 'Polymorphism', 'OOP'],
@@ -139,7 +139,7 @@ const DATA = {
     },
     {
       id: 'day-07',
-      title: 'Day 07: Java Swing GUI — Student Management System',
+      title: 'Java Swing GUI — Student Management System',
       description: 'Tabbed interface (students, enrollments, grades), CRUD operations, auto-generated IDs, grade scale 0.0–4.0.',
       category: 'learning',
       tags: ['Java', 'Java Swing', 'GUI', 'CRUD'],
@@ -150,7 +150,7 @@ const DATA = {
     },
     {
       id: 'day-08',
-      title: 'Day 08: Python — CLI & GUI Calculator Suite',
+      title: 'Python — CLI & GUI Calculator Suite',
       description: 'Basic arithmetic, division/modulo by zero handling, Tkinter dark-theme GUI, button layout.',
       category: 'learning',
       tags: ['Python', 'Tkinter', 'GUI', 'CLI'],
@@ -161,7 +161,7 @@ const DATA = {
     },
     {
       id: 'day-09',
-      title: 'Day 09: Java Swing GUI — Library Management System',
+      title: 'Java Swing GUI — Library Management System',
       description: 'Add/delete/update books, borrow/return with quantity control, search/filter, persistent file storage.',
       category: 'learning',
       tags: ['Java', 'Java Swing', 'GUI', 'File I/O', 'Serialization'],
@@ -172,7 +172,7 @@ const DATA = {
     },
     {
       id: 'day-10',
-      title: 'Day 10: Java Swing GUI — Car Rental Agency System',
+      title: 'Java Swing GUI — Car Rental Agency System',
       description: 'Tabbed interface (add car/motorcycle/truck), type-specific attributes, polymorphic storage.',
       category: 'learning',
       tags: ['Java', 'Java Swing', 'Polymorphism', 'GUI'],
@@ -183,7 +183,7 @@ const DATA = {
     },
     {
       id: 'day-11',
-      title: 'Day 11: Python — TaskFlow Pro To-Do List',
+      title: 'Python — TaskFlow Pro To-Do List',
       description: 'Modern dark/light mode UI, add/complete/delete tasks, persistent storage (tasks.txt), status bar.',
       category: 'learning',
       tags: ['Python', 'CustomTkinter', 'GUI', 'File I/O'],
@@ -194,7 +194,7 @@ const DATA = {
     },
     {
       id: 'day-12',
-      title: 'Day 12: Java — Functional Programming & Stream API',
+      title: 'Java — Functional Programming & Stream API',
       description: 'Lambda expressions, stream mapping/filtering/averaging/grouping, parallel stream benchmark, top earners.',
       category: 'learning',
       tags: ['Java', 'Stream API', 'Functional Programming', 'Lambdas'],
@@ -205,7 +205,7 @@ const DATA = {
     },
     {
       id: 'day-13',
-      title: 'Day 13: Python — Number Guessing Game',
+      title: 'Python — Number Guessing Game',
       description: 'Random secret number (1–100), input validation, hints (too low/high), attempt counter, Enter key support.',
       category: 'learning',
       tags: ['Python', 'Tkinter', 'GUI', 'Game'],
@@ -216,7 +216,7 @@ const DATA = {
     },
     {
       id: 'day-14',
-      title: 'Day 14: Python — Secure Password Generator',
+      title: 'Python — Secure Password Generator',
       description: 'Cryptographically secure passwords (secrets module), length slider (8–50), clipboard copy, dark GUI.',
       category: 'learning',
       tags: ['Python', 'CustomTkinter', 'Security', 'GUI'],
@@ -227,7 +227,7 @@ const DATA = {
     },
     {
       id: 'day-15',
-      title: 'Day 15: Python — Rock Paper Scissors Game',
+      title: 'Python — Rock Paper Scissors Game',
       description: 'Three move buttons, computer random choice, real-time score tracking, color-coded winner announcement.',
       category: 'learning',
       tags: ['Python', 'CustomTkinter', 'GUI', 'Game'],
@@ -238,7 +238,7 @@ const DATA = {
     },
     {
       id: 'day-16',
-      title: 'Day 16: Java — Text Analysis Tool',
+      title: 'Java — Text Analysis Tool',
       description: 'Character/word counts, most common character/word, frequency analysis, unique word count, case-insensitive.',
       category: 'learning',
       tags: ['Java', 'Collections', 'HashMap', 'Text Processing'],
@@ -249,7 +249,7 @@ const DATA = {
     },
     {
       id: 'day-17',
-      title: 'Day 17: Python — Weather App (Open-Meteo API)',
+      title: 'Python — Weather App (Open-Meteo API)',
       description: 'City search with geocoding, real-time weather display, WMO code mapping with emojis, Open-Meteo API.',
       category: 'learning',
       tags: ['Python', 'CustomTkinter', 'API', 'GUI', 'JSON'],
@@ -260,7 +260,7 @@ const DATA = {
     },
     {
       id: 'day-18',
-      title: 'Day 18: Java Swing GUI — Generic Library Catalog System',
+      title: 'Java Swing GUI — Generic Library Catalog System',
       description: 'Generic Catalog<T> and LibraryItem<T> classes, type-safe operations, Book/DVD/Magazine types, CardLayout.',
       category: 'learning',
       tags: ['Java', 'Java Swing', 'Generics', 'GUI', 'OOP'],
@@ -271,7 +271,7 @@ const DATA = {
     },
     {
       id: 'day-19',
-      title: 'Day 19: Java Swing GUI — Multithreaded Clock Application',
+      title: 'Java Swing GUI — Multithreaded Clock Application',
       description: 'Two threads (display updater & time updater), volatile communication, invokeLater(), daemon threads.',
       category: 'learning',
       tags: ['Java', 'Java Swing', 'Multithreading', 'Concurrency', 'GUI'],
@@ -282,7 +282,7 @@ const DATA = {
     },
     {
       id: 'day-20',
-      title: 'Day 20: Java Swing GUI — E-Commerce System',
+      title: 'Java Swing GUI — E-Commerce System',
       description: 'Product catalog with stock management, shopping cart, order status tracking (Pending → Delivered).',
       category: 'learning',
       tags: ['Java', 'Java Swing', 'GUI', 'OOP', 'E-Commerce'],
@@ -293,7 +293,7 @@ const DATA = {
     },
     {
       id: 'day-21',
-      title: 'Day 21: Java — Online Chat Application (Socket Programming)',
+      title: 'Java — Online Chat Application (Socket Programming)',
       description: 'Multi-client support, message broadcasting, join/leave notifications, multithreaded client handlers, TCP sockets.',
       category: 'learning',
       tags: ['Java', 'Java Swing', 'Socket Programming', 'Multithreading', 'Networking'],
@@ -304,7 +304,7 @@ const DATA = {
     },
     {
       id: 'day-22',
-      title: 'Day 22: Java Swing — Weather Application',
+      title: 'Java Swing — Weather Application',
       description: 'Real-time weather & 5-day forecast, city search history, dynamic time-of-day backgrounds, OpenWeatherMap API.',
       category: 'learning',
       tags: ['Java', 'Java Swing', 'API', 'Gson', 'MVC', 'GUI'],

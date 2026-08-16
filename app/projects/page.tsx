@@ -66,7 +66,7 @@ const DATA = {
       description: '43 merged PRs — backend APIs, full-stack features, and UI enhancements.',
       category: 'opensource',
       tags: ['Node.js', 'Express', 'PostgreSQL', 'Sequelize', 'Social Summer of Code 2026', 'Collaborator'],
-      image: '/images/ptetweb.png',
+      image: '/images/ptet.png',
       link: 'https://github.com/AnthropicBots/ptet-web',
       github: 'https://github.com/AnthropicBots/ptet-web/pulls?q=is%3Apr+author%3Adeepthi-mahendran',
       detail: 'Open-source contributor with 40+ merged pull requests. Built backend APIs (Daily Tip, Study Materials CRUD, Recommendations, Bookmark), implemented full-stack features, and fixed dark/light theme support across the application.'

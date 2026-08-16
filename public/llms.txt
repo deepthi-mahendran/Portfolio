@@ -1,0 +1,11 @@
+# Web Portfolio
+
+This website is the personal portfolio of Deepthi Mahendran. It contains information about her projects, skills, education, and ways to contact her. 
+
+## Structure
+- [Home](https://deepthi-mahendran.vercel.app/)
+- [About](https://deepthi-mahendran.vercel.app/about)
+- [Projects](https://deepthi-mahendran.vercel.app/projects)
+- [Skills](https://deepthi-mahendran.vercel.app/skills)
+- [Education](https://deepthi-mahendran.vercel.app/education)
+- [Contact](https://deepthi-mahendran.vercel.app/contact)

@@ -1,0 +1,22 @@
+// import { Metadata } from "next";
+// 
+// export const metadata: Metadata = {
+//   title: "Blog | Deepthi Mahendran",
+//   description: "Read the latest articles, tutorials, and thoughts on web development and open source.",
+//   openGraph: {
+//     title: "Blog | Deepthi Mahendran",
+//     description: "Read the latest articles, tutorials, and thoughts on web development and open source.",
+//     url: "https://deepthimahendran.vercel.app/blog",
+//   },
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "Blog | Deepthi Mahendran",
+//     description: "Read the latest articles, tutorials, and thoughts on web development and open source.",
+//   }
+// };
+// 
+// export default function BlogLayout({ children }: { children: React.ReactNode }) {
+//   return children;
+// }
+
+export default function BlogLayout({ children }: { children: React.ReactNode }) { return <>{children}</>; }

@@ -6,6 +6,17 @@ import Image from 'next/image'
 const DATA = {
   projects: [
     {
+      id: 'web-portfolio',
+      title: 'Personal Web Portfolio 🚀',
+      description: 'Modern, high-performance personal portfolio built with Next.js App Router, React, TypeScript, and Prisma.',
+      category: 'fullstack',
+      tags: ['Next.js', 'React', 'TypeScript', 'Prisma', 'Framer Motion', 'Vanilla CSS'],
+      image: '/images/Portfolio.png',
+      link: 'https://deepthi-mahendran.vercel.app/',
+      github: 'https://github.com/deepthi-mahendran/Portfolio',
+      detail: 'Modern, high-performance personal portfolio built with Next.js (App Router), React, and TypeScript. Features Framer Motion page transitions, an interactive HTML5 Canvas hero particle networking simulation, a glassmorphism dark/light theme engine, Prisma database schema integration, and perfect 100 Lighthouse performance scores.'
+    },
+    {
       id: 'sara',
       title: 'Sara — Modern E-Commerce Platform',
       description: 'Full-stack e-commerce platform with FastAPI + PostgreSQL backend, Docker deployment, and vanilla JS frontend.',

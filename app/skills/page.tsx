@@ -11,13 +11,17 @@ const DATA = {
     { name: 'Languages', skills: [{ name: 'JavaScript', level: 88 }, { name: 'TypeScript', level: 82 }, { name: 'Python', level: 75 }, { name: 'SQL', level: 78 }, { name: 'Java', level: 65 }, { name: 'PHP', level: 50 }] }
   ],
   allSkillTags: [
-    'Next.js', 'React', 'TypeScript', 'JavaScript', 'FastAPI', 'PostgreSQL', 'Docker', 'Vite', 'Vitest',
+    'Next.js', 'React', 'TypeScript', 'Prisma', 'Framer Motion', 'JavaScript', 'FastAPI', 'PostgreSQL', 'Docker', 'Vite', 'Vitest',
     'Java', 'Java Swing', 'CustomTkinter', 'Tkinter', 'Python', 'Node.js', 'Express.js', 'MySQL', 'SQLite',
     'Supabase', 'Stream API', 'Multithreading', 'Socket Programming', 'Generics', 'Gson', 'MVC', 'HashMap',
     'Tailwind CSS', 'HTML5', 'CSS3', 'Git', 'Vercel', 'Postman', 'Sequelize', 'Zustand'
   ],
   skillProjectMap: {
-    'Next.js': ['sara', 'elegant-notes'],
+    'Next.js': ['web-portfolio', 'sara', 'elegant-notes'],
+    'React': ['web-portfolio', 'elegant-notes'],
+    'TypeScript': ['web-portfolio', 'elegant-notes'],
+    'Prisma': ['web-portfolio'],
+    'Framer Motion': ['web-portfolio'],
     'FastAPI': ['sara'],
     'PostgreSQL': ['sara', 'ssoc-2026'],
     'Docker': ['sara'],
@@ -37,8 +41,6 @@ const DATA = {
     'Gson': ['day-22'],
     'MVC': ['day-22'],
     'HashMap': ['day-02', 'day-16'],
-    'React': ['elegant-notes'],
-    'TypeScript': ['elegant-notes'],
     'Node.js': ['ssoc-2026'],
     'Express.js': ['ssoc-2026'],
     'Supabase': ['elegant-notes'],
@@ -48,6 +50,7 @@ const DATA = {
     'Sequelize': ['ssoc-2026']
   },
   projects: [
+    { id: 'web-portfolio', title: 'Personal Web Portfolio 🚀', description: 'Modern, high-performance personal portfolio built with Next.js App Router, React, TypeScript, and Prisma.', category: 'fullstack', tags: ['Next.js', 'React', 'TypeScript', 'Prisma', 'Framer Motion', 'Vanilla CSS'], image: '/images/Portfolio.png', link: 'https://deepthi-mahendran.vercel.app/', github: 'https://github.com/deepthi-mahendran/Portfolio', detail: 'Modern, high-performance personal portfolio built with Next.js (App Router), React, and TypeScript. Features Framer Motion page transitions, an interactive HTML5 Canvas hero particle networking simulation, a glassmorphism dark/light theme engine, Prisma database schema integration, and perfect 100 Lighthouse performance scores.' },
     { id: 'sara', title: 'Sara — Modern E-Commerce Platform', description: 'Full-stack e-commerce platform with FastAPI + PostgreSQL backend, Docker deployment, and vanilla JS frontend.', category: 'fullstack', tags: ['FastAPI', 'PostgreSQL', 'JavaScript', 'Docker', 'Vite', 'Vitest'], image: '/images/Sara.png', link: 'https://sara-001.vercel.app/', github: 'https://github.com/deepthi-mahendran/Sara', detail: 'Full-stack e-commerce platform featuring 32 real products, 4-column responsive grid, JWT auth, AI visual similarity search (FAISS + Transformers), real-time shared cart via WebSockets, multi-step checkout, PWA support, and 117 test files (988 unit tests) with Vitest.' },
     { id: 'cabXpert', title: 'CabXpert — Vehicle Reservation System', description: 'Online vehicle reservation system automating bookings, driver & car management, and billing.', category: 'fullstack', tags: ['Java EE', 'Jersey (JAX-RS)', 'MySQL', 'JDBC', 'Maven', 'Bootstrap'], image: '/images/CarXpert.png', link: '#', github: 'https://github.com/Deepthi-Mahendran', detail: 'Automated vehicle reservation system built for Mega City Cab using Java RESTful Web Services (Jersey) and Test-Driven Development (TDD). Ensures high reliability, scalability, driver & car scheduling, and automated billing management.' },
     { id: 'elegant-notes', title: 'Elegant Notes — PWA', description: 'Offline-first note-taking PWA with real-time cloud sync and premium editor.', category: 'web', tags: ['React', 'TypeScript', 'Supabase', 'Tiptap', 'Zustand'], image: '/images/Elegant-Notes.webp', link: 'https://elegant-notes-demo.vercel.app/', github: 'https://github.com/deepthi-mahendran/elegant-notes', detail: 'High-performance offline-first PWA with Service Workers, Supabase for real-time cloud sync, secure authentication, and a premium Tiptap editor with complex formatting.' },

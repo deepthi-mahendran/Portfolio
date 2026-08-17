@@ -12,8 +12,8 @@ A modern, high-performance personal portfolio built with Next.js App Router, Rea
   - Interactive course tables with grade badges and expandable **"What I Gained"** knowledge panels for each course.
   - Single-accordion card expansion for clean timeline navigation.
 - **Programmes, Volunteering & Achievements**:
-  - **National Entrepreneurship Development Programme (NEPD Phase 3)** — National Innovation Agency / UoM / Union Bank (*Almost Completed*).
   - **OMLAS Champion 2026** — One Million Leaders Asia (*In Progress*).
+  - **National Entrepreneurship Development Programme (NEPD Phase 3)** — National Innovation Agency / UoM / Union Bank (*Almost Completed*).
   - **IEEE Young Professionals Sri Lanka** — Y2NPro Social Media Coordinator.
   - **1st Alliance Cup Full Contact Karate 2025** — Gold Medalist (UWMAFS SL / UWMF Japan).
 - **Projects Showcase**:

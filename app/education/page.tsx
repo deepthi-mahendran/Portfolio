@@ -105,22 +105,6 @@ const EDUCATION_DATA = [
 
 const PROGRAMMES = [
   {
-    id: 'nepd',
-    title: 'National Entrepreneurship Development Programme (NEPD) – Phase 3',
-    org: 'National Innovation Agency (NIA) | University of Moratuwa | Union Bank of Colombo',
-    period: 'June 2026 – Present',
-    status: 'Almost Completed',
-    statusColor: '#f59e0b',
-    icon: '🚀',
-    description: "Selected to participate in the third cohort of this flagship national entrepreneurship programme, which equips aspiring entrepreneurs with practical knowledge, mentorship, industry exposure, and entrepreneurial skills to transform innovative ideas into sustainable ventures. Engaging in workshops, networking sessions, and mentorship opportunities designed to strengthen Sri Lanka's innovation ecosystem. Collaborating with fellow participants from across the country to develop and refine business concepts with real-world impact potential.",
-    activities: [
-      'Attending structured training sessions on business model development, market validation, and financial planning',
-      'Receiving mentorship from industry experts and successful entrepreneurs',
-      'Participating in networking events with investors, innovators, and policymakers',
-      'Developing a venture concept aimed at addressing real-world challenges',
-    ],
-  },
-  {
     id: 'omlas',
     title: 'OMLAS Champion 2026',
     org: 'One Million Leaders Asia (OMLAS) | South & Southeast Asia',
@@ -135,6 +119,22 @@ const PROGRAMMES = [
       'Collaborating with young leaders from diverse cultural backgrounds across Asia',
       'Developing and implementing a community project that addresses a local challenge',
       'Building skills in communication, teamwork, resilience, and ethical decision-making',
+    ],
+  },
+  {
+    id: 'nepd',
+    title: 'National Entrepreneurship Development Programme (NEPD) – Phase 3',
+    org: 'National Innovation Agency (NIA) | University of Moratuwa | Union Bank of Colombo',
+    period: 'June 2026 – Present',
+    status: 'Almost Completed',
+    statusColor: '#f59e0b',
+    icon: '🚀',
+    description: "Selected to participate in the third cohort of this flagship national entrepreneurship programme, which equips aspiring entrepreneurs with practical knowledge, mentorship, industry exposure, and entrepreneurial skills to transform innovative ideas into sustainable ventures. Engaging in workshops, networking sessions, and mentorship opportunities designed to strengthen Sri Lanka's innovation ecosystem. Collaborating with fellow participants from across the country to develop and refine business concepts with real-world impact potential.",
+    activities: [
+      'Attending structured training sessions on business model development, market validation, and financial planning',
+      'Receiving mentorship from industry experts and successful entrepreneurs',
+      'Participating in networking events with investors, innovators, and policymakers',
+      'Developing a venture concept aimed at addressing real-world challenges',
     ],
   },
 ]

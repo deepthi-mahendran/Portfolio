@@ -341,14 +341,22 @@ export default function Home() {
                 <span className="typing-cursor" aria-hidden="true">|</span>
               </span>
             </motion.h1>
-            <motion.p 
+            <motion.div 
               initial={{ opacity: 0 }} 
               animate={{ opacity: 1 }} 
               transition={{ duration: 0.8, delay: 0.4 }}
               className="hero-sub" style={{ animation: 'none', opacity: 1 }}
             >
-              Aspiring Full-Stack Developer &amp; Tech Enthusiast. Building products that make a difference. Making the web more accessible and affordable, one line of code at a time.
-            </motion.p>
+              <p style={{ fontWeight: 600, color: 'var(--text-primary)', marginBottom: '12px' }}>
+                Aspiring Full-Stack Developer | Tech Enthusiast | Changemaker
+              </p>
+              <p style={{ marginBottom: '12px' }}>
+                Building products that make a difference. One line of code at a time.
+              </p>
+              <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>
+                I believe the best technology is the one that serves people, not the other way around. Let's create something that matters.
+              </p>
+            </motion.div>
             <motion.div 
               initial={{ opacity: 0, y: 20 }} 
               animate={{ opacity: 1, y: 0 }} 

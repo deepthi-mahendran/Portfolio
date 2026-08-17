@@ -1574,9 +1574,10 @@ textarea.form-control {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 32px;
     padding-bottom: 60px;
+    align-items: stretch;
 }
 
 .project-grid-item {
@@ -1593,6 +1594,7 @@ textarea.form-control {
         border-color 0.3s ease;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .project-grid-item.visible {
@@ -1611,6 +1613,7 @@ textarea.form-control {
     background: var(--bg-surface-light);
     overflow: hidden;
     position: relative;
+    flex-shrink: 0;
 }
 
 .project-grid-item .thumb img {
@@ -1647,7 +1650,7 @@ textarea.form-control {
     color: var(--text-secondary);
     font-size: 0.95rem;
     line-height: 1.6;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     flex: 1;
 }
 
@@ -1655,6 +1658,8 @@ textarea.form-control {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    margin-top: auto;
+    margin-bottom: 16px;
 }
 
 .project-grid-item .tags span {
@@ -1677,7 +1682,7 @@ textarea.form-control {
 .card-actions {
     display: flex;
     gap: 8px;
-    margin-top: 18px;
+    margin-top: auto;
     padding-top: 16px;
     border-top: 1px solid var(--border-color);
 }

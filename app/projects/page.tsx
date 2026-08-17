@@ -429,12 +429,11 @@ export default function ProjectsPage() {
             <h2 className="section-title">Projects Under <span className="gradient-text">Progress</span></h2>
             <p className="section-subtitle">Platforms and software systems currently being engineered and refined.</p>
 
-            <div className="projects-grid" style={{ paddingBottom: '0', marginTop: '36px', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 360px))' }}>
+            <div className="projects-grid" style={{ paddingBottom: '0', marginTop: '36px' }}>
               {DATA.inProgressProjects.map((p) => (
                 <div
                   key={p.id}
                   className="project-grid-item visible"
-                  style={{ maxWidth: '360px', width: '100%' }}
                   onClick={() => setModalData(p)}
                 >
                   <div className="thumb" style={{ position: 'relative' }}>

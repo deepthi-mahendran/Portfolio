@@ -4,10 +4,11 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 
 const DATA = {
-  projects: [
+  inProgressProjects: [
     {
       id: 'sara',
       title: 'Sara — Modern E-Commerce Platform',
+      status: 'Under Progress',
       description: 'Full-stack e-commerce platform with FastAPI + PostgreSQL backend, Docker deployment, and vanilla JS frontend.',
       category: 'fullstack',
       tags: ['FastAPI', 'PostgreSQL', 'JavaScript', 'Docker', 'Vite', 'Vitest'],
@@ -15,7 +16,9 @@ const DATA = {
       link: 'https://sara-001.vercel.app/',
       github: 'https://github.com/deepthi-mahendran/Sara',
       detail: 'Full-stack e-commerce platform featuring 32 real products, 4-column responsive grid, JWT auth, AI visual similarity search (FAISS + Transformers), real-time shared cart via WebSockets, multi-step checkout, PWA support, and 117 test files (988 unit tests) with Vitest.'
-    },
+    }
+  ],
+  projects: [
     {
       id: 'cabXpert',
       title: 'CabXpert — Vehicle Reservation System',
@@ -39,6 +42,17 @@ const DATA = {
       detail: 'High-performance offline-first PWA with Service Workers, Supabase for real-time cloud sync, secure authentication, and a premium Tiptap editor with complex formatting.'
     },
     {
+      id: 'ssoc-2026',
+      title: 'PTET Web',
+      description: '43 merged PRs — backend APIs, full-stack features, and UI enhancements.',
+      category: 'opensource',
+      tags: ['Node.js', 'Express', 'PostgreSQL', 'Sequelize', 'Social Summer of Code 2026', 'Collaborator'],
+      image: '/images/ptet.png',
+      link: 'https://github.com/AnthropicBots/ptet-web',
+      github: 'https://github.com/AnthropicBots/ptet-web/pulls?q=is%3Apr+author%3Adeepthi-mahendran',
+      detail: 'Open-source contributor with 43+ merged pull requests. Built backend APIs (Daily Tip, Study Materials CRUD, Recommendations, Bookmark), implemented full-stack features, and fixed dark/light theme support across the application.'
+    },
+    {
       id: 'my-educational',
       title: 'My Educational Website',
       description: 'Clean single-page portfolio built with pure HTML, CSS, and JavaScript.',
@@ -48,17 +62,6 @@ const DATA = {
       link: 'https://my-web-project-iaii.vercel.app/',
       github: 'https://github.com/deepthi-mahendran/my-web-project-iaii',
       detail: 'A clean, single-page static portfolio website built with pure HTML to showcase projects and academic work. Deployed on Vercel with a streamlined workflow.'
-    },
-    {
-      id: 'ssoc-2026',
-      title: 'PTET Web',
-      description: '42 merged PRs — backend APIs, full-stack features, and UI enhancements.',
-      category: 'opensource',
-      tags: ['Node.js', 'Express', 'PostgreSQL', 'Sequelize', 'Social Summer of Code 2026', 'Collaborator'],
-      image: '/images/ptet.png',
-      link: 'https://github.com/AnthropicBots/ptet-web',
-      github: 'https://github.com/AnthropicBots/ptet-web/pulls?q=is%3Apr+author%3Adeepthi-mahendran',
-      detail: 'Open-source contributor with 40+ merged pull requests. Built backend APIs (Daily Tip, Study Materials CRUD, Recommendations, Bookmark), implemented full-stack features, and fixed dark/light theme support across the application.'
     },
     {
       id: 'web-portfolio',
@@ -278,23 +281,21 @@ const DATA = {
       image: '/images/Project18.webp',
       link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-18',
       github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-18',
-      detail: 'Implemented Java Generics (`Catalog<T>`, `LibraryItem<T>`) within a CardLayout Swing GUI to create a type-safe library system supporting Books, DVDs, and Magazines with unique item details.'
+      detail: 'Created a generic Java Swing catalog desktop app demonstrating type-safe collection management (`Catalog<T>`), dynamic item type switching (Book, DVD, Magazine), search filtering, and CardLayout navigation.'
     },
     {
       id: 'day-19',
-      title: 'Java Swing GUI — Multithreaded Clock Application',
-      description: 'Two threads (display updater & time updater), volatile communication, invokeLater(), daemon threads.',
+      title: 'Java — Multi-threaded Bank Account Simulation',
+      description: 'Bank account with deposit/withdraw, multiple threads, synchronization, deadlocks prevention, transaction log.',
       category: 'learning',
-      tags: ['Java', 'Java Swing', 'Multithreading', 'Concurrency', 'GUI'],
+      tags: ['Java', 'Multithreading', 'Synchronization', 'Concurrency'],
       image: '/images/Project19.webp',
       link: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-19',
       github: 'https://github.com/deepthi-mahendran/My-Learning-Journal/tree/main/Day-19',
-      detail: 'Demonstrated Java multithreading and thread synchronization by creating a real-time Swing clock app with separate display and time calculation threads using thread priorities and `SwingUtilities.invokeLater()`.'
+      detail: 'Engineered a concurrent Java bank simulation testing thread safety with synchronized deposit/withdraw routines, reentrant locking, race condition mitigation, and detailed transaction logs.'
     },
     {
       id: 'day-20',
-      title: 'Java Swing GUI — E-Commerce System',
-      description: 'Product catalog with stock management, shopping cart, order status tracking (Pending → Delivered).',
       category: 'learning',
       tags: ['Java', 'Java Swing', 'GUI', 'OOP', 'E-Commerce'],
       image: '/images/Project20.webp',
@@ -350,14 +351,16 @@ export default function ProjectsPage() {
     })
     
     return () => observer.disconnect()
-  }, [filter]) // Re-run animation when filter changes
+  }, [filter])
 
   return (
     <>
-      <section className="section-padding" style={{ paddingTop: '120px' }}>
+      <section className="section-padding" style={{ paddingTop: '140px' }}>
         <div className="container">
-          <h2 className="section-title">Things I've <span className="accent-text">Shipped</span></h2>
-          <p className="section-subtitle">From web apps to open source — each project tells a story.</p>
+
+          {/* THINGS I'VE SHIPPED */}
+          <h1 className="section-title">Things I've <span className="accent-text">Shipped</span></h1>
+          <p className="section-subtitle">From web apps to open source — completed projects and contributions.</p>
 
           <div className="filter-bar" id="filterBar">
             <button className={`filter-btn ${filter === 'all' ? 'active' : ''}`} onClick={() => setFilter('all')}>All</button>
@@ -399,6 +402,79 @@ export default function ProjectsPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* PROJECTS UNDER PROGRESS */}
+          <div style={{ marginTop: '80px', paddingTop: '60px', borderTop: '1px solid rgba(181, 136, 211, 0.15)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
+              <span style={{
+                padding: '4px 14px',
+                borderRadius: '20px',
+                fontSize: '0.75rem',
+                fontWeight: 700,
+                background: 'rgba(139, 69, 186, 0.22)',
+                color: 'var(--accent)',
+                border: '1px solid rgba(139, 69, 186, 0.4)',
+                letterSpacing: '0.5px',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px'
+              }}>
+                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--accent)', boxShadow: '0 0 10px var(--accent)' }} />
+                Active Development
+              </span>
+            </div>
+            <h2 className="section-title">Projects Under <span className="gradient-text">Progress</span></h2>
+            <p className="section-subtitle">Platforms and software systems currently being engineered and refined.</p>
+
+            <div className="projects-grid" style={{ paddingBottom: '0', marginTop: '36px', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 360px))' }}>
+              {DATA.inProgressProjects.map((p) => (
+                <div
+                  key={p.id}
+                  className="project-grid-item visible"
+                  style={{ maxWidth: '360px', width: '100%' }}
+                  onClick={() => setModalData(p)}
+                >
+                  <div className="thumb" style={{ position: 'relative' }}>
+                    <Image src={p.image} alt={p.title} fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: 'cover' }} />
+                    <span style={{
+                      position: 'absolute', top: 14, right: 14,
+                      padding: '4px 14px', borderRadius: '20px',
+                      fontSize: '0.72rem', fontWeight: 700,
+                      background: 'rgba(14, 7, 19, 0.85)',
+                      color: 'var(--accent)',
+                      backdropFilter: 'blur(8px)',
+                      border: '1px solid rgba(181, 136, 211, 0.35)',
+                      letterSpacing: '0.5px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '6px'
+                    }}>
+                      ⏳ Under Progress
+                    </span>
+                  </div>
+                  <div className="info">
+                      <h3>{p.title}</h3>
+                      <p>{p.description}</p>
+                      <div className="tags">{p.tags.map(t => <span key={t}>{t}</span>)}</div>
+                      <div className="card-actions" onClick={e => e.stopPropagation()}>
+                        {p.github && p.github !== '#' && (
+                          <a href={p.github} target="_blank" rel="noopener noreferrer" className="card-btn card-btn-ghost" aria-label="GitHub">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                            GitHub
+                          </a>
+                        )}
+                        {p.link && p.link !== '#' && (
+                          <a href={p.link} target="_blank" rel="noopener noreferrer" className="card-btn card-btn-accent" aria-label="Live Demo">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            Live Demo
+                          </a>
+                        )}
+                      </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

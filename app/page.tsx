@@ -22,6 +22,7 @@ const DATA = {
     {
       id: 'sara',
       title: 'Sara — Modern E-Commerce Platform',
+      status: 'Under Progress',
       description: 'Full-stack e-commerce platform with FastAPI + PostgreSQL backend, Docker deployment, and vanilla JS frontend.',
       category: 'fullstack',
       tags: ['FastAPI', 'PostgreSQL', 'JavaScript', 'Docker', 'Vite', 'Vitest'],
@@ -53,6 +54,17 @@ const DATA = {
       detail: 'High-performance offline-first PWA with Service Workers, Supabase for real-time cloud sync, secure authentication, and a premium Tiptap editor with complex formatting.'
     },
     {
+      id: 'ssoc-2026',
+      title: 'PTET Web',
+      description: '43 merged PRs — backend APIs, full-stack features, and UI enhancements.',
+      category: 'opensource',
+      tags: ['Node.js', 'Express', 'PostgreSQL', 'Sequelize', 'Social Summer of Code 2026', 'Collaborator'],
+      image: '/images/ptet.png',
+      link: 'https://github.com/AnthropicBots/ptet-web',
+      github: 'https://github.com/AnthropicBots/ptet-web/pulls?q=is%3Apr+author%3Adeepthi-mahendran',
+      detail: 'Open-source contributor with 43+ merged pull requests. Built backend APIs (Daily Tip, Study Materials CRUD, Recommendations, Bookmark), implemented full-stack features, and fixed dark/light theme support across the application.'
+    },
+    {
       id: 'my-educational',
       title: 'My Educational Website',
       description: 'Clean single-page portfolio built with pure HTML, CSS, and JavaScript.',
@@ -62,17 +74,6 @@ const DATA = {
       link: 'https://my-web-project-iaii.vercel.app/',
       github: 'https://github.com/deepthi-mahendran/my-web-project-iaii',
       detail: 'A clean, single-page static portfolio website built with pure HTML to showcase projects and academic work. Deployed on Vercel with a streamlined workflow.'
-    },
-    {
-      id: 'ssoc-2026',
-      title: 'PTET Web',
-      description: '43 merged PRs — backend APIs, full-stack features, and UI enhancements.',
-      category: 'opensource',
-      tags: ['Node.js', 'Express', 'PostgreSQL', 'Sequelize', 'Social Summer of Code 2026', 'Collaborator'],
-      image: '/images/ptet.png',
-      link: 'https://github.com/AnthropicBots/ptet-web',
-      github: 'https://github.com/AnthropicBots/ptet-web/pulls?q=is%3Apr+author%3Adeepthi-mahendran',
-      detail: 'Open-source contributor with 40+ merged pull requests. Built backend APIs (Daily Tip, Study Materials CRUD, Recommendations, Bookmark), implemented full-stack features, and fixed dark/light theme support across the application.'
     }
   ],
   testimonials: [
@@ -403,7 +404,21 @@ export default function Home() {
                 onClick={() => setModalData(p)}
                 style={{ overflow: 'hidden', minWidth: '320px', flexShrink: 0, cursor: 'pointer' }}
               >
-                <div className="thumb" style={{ position: 'relative' }}><Image src={p.image} alt={p.title} fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: 'cover' }} /></div>
+                <div className="thumb" style={{ position: 'relative' }}>
+                  <Image src={p.image} alt={p.title} fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: 'cover' }} />
+                  {p.status && (
+                    <span style={{
+                      position: 'absolute', top: 12, right: 12, zIndex: 2,
+                      padding: '4px 12px', borderRadius: '20px',
+                      fontSize: '0.72rem', fontWeight: 700,
+                      background: 'rgba(14, 7, 19, 0.85)', color: 'var(--accent)',
+                      backdropFilter: 'blur(8px)', border: '1px solid rgba(181, 136, 211, 0.35)',
+                      letterSpacing: '0.5px'
+                    }}>
+                      ⏳ {p.status}
+                    </span>
+                  )}
+                </div>
                 <div className="card-body">
                   <h3>{p.title}</h3>
                   <p>{p.description}</p>

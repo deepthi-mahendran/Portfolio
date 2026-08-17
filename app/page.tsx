@@ -383,7 +383,7 @@ export default function Home() {
         >
           <motion.div variants={itemVariants} className="stat-item"><div className="stat-icon" style={{ color: 'var(--accent)' }}><Flame size={28} strokeWidth={2.1} /></div><div className="stat-number gradient-text" data-count="1">0</div><div className="stat-label">Years Experience</div></motion.div>
           <motion.div variants={itemVariants} className="stat-item"><div className="stat-icon" style={{ color: 'var(--accent)' }}><Rocket size={28} strokeWidth={2.1} /></div><div className="stat-number gradient-text" data-count="6">0</div><div className="stat-label">Projects Launched</div></motion.div>
-          <motion.div variants={itemVariants} className="stat-item"><div className="stat-icon" style={{ color: 'var(--accent)' }}><Sparkles size={28} strokeWidth={2.1} /></div><div className="stat-number gradient-text" data-count="40">0</div><div className="stat-label">Open Source PRs</div></motion.div>
+          <motion.div variants={itemVariants} className="stat-item"><div className="stat-icon" style={{ color: 'var(--accent)' }}><Sparkles size={28} strokeWidth={2.1} /></div><div className="stat-number gradient-text" data-count="43">0</div><div className="stat-label">Open Source PRs</div></motion.div>
           <motion.div variants={itemVariants} className="stat-item"><div className="stat-icon" style={{ color: 'var(--accent)' }}><GraduationCap size={28} strokeWidth={2.1} /></div><div className="stat-number gradient-text" data-count="2">0</div><div className="stat-label">Degrees in Progress</div></motion.div>
         </motion.div>
 

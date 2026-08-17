@@ -6,17 +6,6 @@ import Image from 'next/image'
 const DATA = {
   projects: [
     {
-      id: 'web-portfolio',
-      title: 'Personal Web Portfolio 🚀',
-      description: 'Modern, high-performance personal portfolio built with Next.js App Router, React, TypeScript, and Prisma.',
-      category: 'fullstack',
-      tags: ['Next.js', 'React', 'TypeScript', 'Prisma', 'Framer Motion', 'Vanilla CSS'],
-      image: '/images/Portfolio.png',
-      link: 'https://deepthi-paul.vercel.app/',
-      github: 'https://github.com/deepthi-mahendran/Portfolio',
-      detail: 'Modern, high-performance personal portfolio built with Next.js (App Router), React, and TypeScript. Features Framer Motion page transitions, an interactive HTML5 Canvas hero particle networking simulation, a glassmorphism dark/light theme engine, Prisma database schema integration, and perfect 100 Lighthouse performance scores.'
-    },
-    {
       id: 'sara',
       title: 'Sara — Modern E-Commerce Platform',
       description: 'Full-stack e-commerce platform with FastAPI + PostgreSQL backend, Docker deployment, and vanilla JS frontend.',
@@ -63,13 +52,24 @@ const DATA = {
     {
       id: 'ssoc-2026',
       title: 'PTET Web',
-      description: '43 merged PRs — backend APIs, full-stack features, and UI enhancements.',
+      description: '42 merged PRs — backend APIs, full-stack features, and UI enhancements.',
       category: 'opensource',
       tags: ['Node.js', 'Express', 'PostgreSQL', 'Sequelize', 'Social Summer of Code 2026', 'Collaborator'],
       image: '/images/ptet.png',
       link: 'https://github.com/AnthropicBots/ptet-web',
       github: 'https://github.com/AnthropicBots/ptet-web/pulls?q=is%3Apr+author%3Adeepthi-mahendran',
       detail: 'Open-source contributor with 40+ merged pull requests. Built backend APIs (Daily Tip, Study Materials CRUD, Recommendations, Bookmark), implemented full-stack features, and fixed dark/light theme support across the application.'
+    },
+    {
+      id: 'web-portfolio',
+      title: 'Personal Web Portfolio 🚀',
+      description: 'Modern, high-performance personal portfolio built with Next.js App Router, React, TypeScript, and Prisma.',
+      category: 'fullstack',
+      tags: ['Next.js', 'React', 'TypeScript', 'Prisma', 'Framer Motion', 'Vanilla CSS'],
+      image: '/images/Portfolio.png',
+      link: 'https://deepthi-paul.vercel.app/',
+      github: 'https://github.com/deepthi-mahendran/Portfolio',
+      detail: 'Modern, high-performance personal portfolio built with Next.js (App Router), React, and TypeScript. Features Framer Motion page transitions, an interactive HTML5 Canvas hero particle networking simulation, a glassmorphism dark/light theme engine, Prisma database schema integration, and perfect 100 Lighthouse performance scores.'
     },
     {
       id: 'slia-intern',
@@ -331,8 +331,8 @@ export default function ProjectsPage() {
   const [filter, setFilter] = useState('all')
   const [modalData, setModalData] = useState<typeof DATA.projects[0] | null>(null)
   
-  const filteredProjects = filter === 'all' 
-    ? DATA.projects 
+  const filteredProjects = filter === 'all'
+    ? DATA.projects.filter(p => p.category !== 'learning')
     : DATA.projects.filter(p => p.category === filter)
 
   useEffect(() => {
@@ -369,9 +369,9 @@ export default function ProjectsPage() {
 
           <div className="projects-grid">
             {filteredProjects.map((p, i) => (
-              <div 
-                key={`${p.id}-${filter}`} 
-                className="project-grid-item" 
+              <div
+                key={`${p.id}-${filter}`}
+                className="project-grid-item"
                 style={{ transitionDelay: `${i * 60}ms` }}
                 onClick={() => setModalData(p)}
               >
@@ -380,6 +380,20 @@ export default function ProjectsPage() {
                     <h3>{p.title}</h3>
                     <p>{p.description}</p>
                     <div className="tags">{p.tags.map(t => <span key={t}>{t}</span>)}</div>
+                    <div className="card-actions" onClick={e => e.stopPropagation()}>
+                      {p.github && p.github !== '#' && (
+                        <a href={p.github} target="_blank" rel="noopener noreferrer" className="card-btn card-btn-ghost" aria-label="GitHub">
+                          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                          GitHub
+                        </a>
+                      )}
+                      {p.link && p.link !== '#' && (
+                        <a href={p.link} target="_blank" rel="noopener noreferrer" className="card-btn card-btn-accent" aria-label="Live Demo">
+                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                          Live Demo
+                        </a>
+                      )}
+                    </div>
                 </div>
               </div>
             ))}

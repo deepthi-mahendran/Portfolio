@@ -1672,3 +1672,54 @@ textarea.form-control {
     border-color: rgba(45, 212, 191, 0.2);
     color: var(--text-primary);
 }
+
+/* ── Card Action Buttons ── */
+.card-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+.card-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: 8px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    font-family: var(--font-body);
+    text-decoration: none;
+    transition: all 0.22s ease;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+}
+
+.card-btn-ghost {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+.card-btn-ghost:hover {
+    background: rgba(181, 136, 211, 0.12);
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.card-btn-accent {
+    background: rgba(181, 136, 211, 0.15);
+    border: 1px solid rgba(181, 136, 211, 0.35);
+    color: var(--accent);
+}
+
+.card-btn-accent:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--accent-glow-strong);
+}

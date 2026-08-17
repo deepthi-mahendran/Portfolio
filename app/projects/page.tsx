@@ -296,6 +296,8 @@ const DATA = {
     },
     {
       id: 'day-20',
+      title: 'Java Swing GUI — Note Taking Application',
+      description: 'Rich text area, file I/O (open/save/new), word & character count status bar, dark/light theme toggle.',
       category: 'learning',
       tags: ['Java', 'Java Swing', 'GUI', 'OOP', 'E-Commerce'],
       image: '/images/Project20.webp',

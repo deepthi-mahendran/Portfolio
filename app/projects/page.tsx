@@ -375,7 +375,9 @@ export default function ProjectsPage() {
                 style={{ transitionDelay: `${i * 60}ms` }}
                 onClick={() => setModalData(p)}
               >
-                <div className="thumb" style={{ position: 'relative' }}><Image src={p.image} alt={p.title} fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: 'cover' }} /></div>
+                {p.category !== 'learning' && p.image && (
+                  <div className="thumb" style={{ position: 'relative' }}><Image src={p.image} alt={p.title} fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: 'cover' }} /></div>
+                )}
                 <div className="info">
                     <h3>{p.title}</h3>
                     <p>{p.description}</p>
@@ -408,7 +410,9 @@ export default function ProjectsPage() {
           
           {modalData && (
             <div id="modalBody">
-              <div className="thumb" style={{ position: 'relative', margin: '-40px -40px 24px -40px', height: '280px', width: 'calc(100% + 80px)', borderRadius: 0 }}><Image src={modalData.image} alt={modalData.title} fill sizes="100vw" style={{ objectFit: 'cover' }} /></div>
+              {modalData.category !== 'learning' && modalData.image && (
+                <div className="thumb" style={{ position: 'relative', margin: '-40px -40px 24px -40px', height: '280px', width: 'calc(100% + 80px)', borderRadius: 0 }}><Image src={modalData.image} alt={modalData.title} fill sizes="100vw" style={{ objectFit: 'cover' }} /></div>
+              )}
               <h2>{modalData.title}</h2>
               <div className="meta">{modalData.category} · {modalData.tags.join(' · ')}</div>
               <p className="desc">{modalData.detail || modalData.description}</p>

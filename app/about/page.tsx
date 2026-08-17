@@ -269,8 +269,8 @@ export default function AboutPage() {
             <div><h4 style={{ margin: 0, color: 'var(--text-primary)' }}>Music</h4><p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Piano and production</p></div>
           </motion.div>
           <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="glass-panel" style={{ padding: '24px', display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <span style={{ color: 'var(--accent)' }}><Activity size={32} /></span>
-            <div><h4 style={{ margin: 0, color: 'var(--text-primary)' }}>Running</h4><p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>5K every morning</p></div>
+            <span style={{ color: 'var(--accent)', fontSize: '32px', lineHeight: 1 }}>🥋</span>
+            <div><h4 style={{ margin: 0, color: 'var(--text-primary)' }}>Karate</h4><p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Every morning</p></div>
           </motion.div>
           <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="glass-panel" style={{ padding: '24px', display: 'flex', alignItems: 'center', gap: '16px' }}>
             <span style={{ color: 'var(--accent)' }}><Sprout size={32} /></span>

@@ -31,21 +31,21 @@ const UOP_INPROGRESS = [
 ]
 
 const UOM_COMPLETED = [
-  { code: 'ITE1123', name: 'Fundamentals of Programming', credits: 3, grade: 'A', knowledge: 'Core programming constructs, algorithms, problem-solving strategies, and introductory software development.' },
-  { code: 'ITE1213', name: 'Computer Systems', credits: 2, grade: 'A', knowledge: 'Hardware architecture, operating system concepts, memory management, and system-level programming.' },
-  { code: 'ITE1713', name: 'Web Design', credits: 3, grade: 'B', knowledge: 'UI/UX principles, HTML/CSS fundamentals, responsive layouts, and accessibility standards.' },
-  { code: 'ITE1813', name: 'Mathematics and Statistics for IT', credits: 2, grade: 'A-', knowledge: 'Applied mathematics, statistical analysis, probability theory, and data-driven decision making.' },
-  { code: 'ITE1913', name: 'Communication Skills Development', credits: 2, grade: 'A+', knowledge: 'Technical presentation, professional writing, teamwork communication, and stakeholder management.' },
-  { code: 'ITE1923', name: 'ICT Skills and Applications', credits: 3, grade: 'A', knowledge: 'Practical computing applications, productivity tools, digital literacy, and ICT project implementation.' },
+  { code: 'ITE1123', name: 'Fundamentals of Programming', grade: 'A', knowledge: 'Core programming constructs, algorithms, problem-solving strategies, and introductory software development.' },
+  { code: 'ITE1213', name: 'Computer Systems', grade: 'A', knowledge: 'Hardware architecture, operating system concepts, memory management, and system-level programming.' },
+  { code: 'ITE1713', name: 'Web Design', grade: 'B', knowledge: 'UI/UX principles, HTML/CSS fundamentals, responsive layouts, and accessibility standards.' },
+  { code: 'ITE1813', name: 'Mathematics and Statistics for IT', grade: 'A-', knowledge: 'Applied mathematics, statistical analysis, probability theory, and data-driven decision making.' },
+  { code: 'ITE1913', name: 'Communication Skills Development', grade: 'A+', knowledge: 'Technical presentation, professional writing, teamwork communication, and stakeholder management.' },
+  { code: 'ITE1923', name: 'ICT Skills and Applications', grade: 'A', knowledge: 'Practical computing applications, productivity tools, digital literacy, and ICT project implementation.' },
 ]
 
 const UOM_INPROGRESS = [
-  { code: 'ITE1133', name: 'Visual Applications', credits: 3, grade: 'Pending', knowledge: 'GUI development, event-driven programming, visual design patterns, and desktop application development.' },
-  { code: 'ITE1223', name: 'System & Design Paradigms', credits: 3, grade: 'Pending', knowledge: 'Software design principles, architectural patterns, systems thinking, and paradigm-driven development.' },
-  { code: 'ITE1413', name: 'Fundamentals of Databases', credits: 2, grade: 'Pending', knowledge: 'Database design, normalization, SQL, transactions, and data modeling for IT applications.' },
-  { code: 'ITE1723', name: 'Web Programming', credits: 3, grade: 'Pending', knowledge: 'Client-server architecture, dynamic web development, JavaScript frameworks, and REST APIs.' },
-  { code: 'ITE1933', name: 'Technical Writing', credits: 2, grade: 'Pending', knowledge: 'Documentation standards, technical report writing, API documentation, and user manual creation.' },
-  { code: 'ITE1943', name: 'ICT Project', credits: 2, grade: 'Pending', knowledge: 'End-to-end project development, agile team collaboration, and delivering a functional IT solution.' },
+  { code: 'ITE1133', name: 'Visual Applications', grade: 'Pending', knowledge: 'GUI development, event-driven programming, visual design patterns, and desktop application development.' },
+  { code: 'ITE1223', name: 'System & Design Paradigms', grade: 'Pending', knowledge: 'Software design principles, architectural patterns, systems thinking, and paradigm-driven development.' },
+  { code: 'ITE1413', name: 'Fundamentals of Databases', grade: 'Pending', knowledge: 'Database design, normalization, SQL, transactions, and data modeling for IT applications.' },
+  { code: 'ITE1723', name: 'Web Programming', grade: 'Pending', knowledge: 'Client-server architecture, dynamic web development, JavaScript frameworks, and REST APIs.' },
+  { code: 'ITE1933', name: 'Technical Writing', grade: 'Pending', knowledge: 'Documentation standards, technical report writing, API documentation, and user manual creation.' },
+  { code: 'ITE1943', name: 'ICT Project', grade: 'Pending', knowledge: 'End-to-end project development, agile team collaboration, and delivering a functional IT solution.' },
 ]
 
 const EDUCATION_DATA = [
@@ -60,7 +60,7 @@ const EDUCATION_DATA = [
     inProgress: UOM_INPROGRESS,
     completedLabel: 'Semester 2025S1 – Completed',
     inProgressLabel: 'Semester 2025S2 – In Progress',
-    showCredits: true,
+    showCredits: false,
   },
   {
     id: 'uop',
